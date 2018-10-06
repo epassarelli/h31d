@@ -40,7 +40,7 @@ if (!empty($_SERVER['HTTPS'])) {
 | variable so that it is blank.
 |
 */
-$config['index_page'] = '';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------

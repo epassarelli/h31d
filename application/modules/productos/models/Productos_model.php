@@ -15,7 +15,7 @@ class Productos_model extends CI_Model
       
       $this->db->like("categorias.slug", $categoriaSlug, "before");
 
-      $this->db->order_by("idproducts", "ASC");
+      $this->db->order_by("precio", "ASC");
       $query = $this->db->get();
       //echo $this->db->last_query();
       //$result = $query->result_array();
@@ -88,6 +88,7 @@ class Productos_model extends CI_Model
       $this->db->join("categorias", "productos_has_categorias.categories_idcategories = categorias.idcategorias");
       $this->db->join("productos_has_tags", "productos_has_tags.products_idproducts = productos.idproducts");
       $this->db->join("tags", "productos_has_tags.tags_idtags = tags.idtags");
+      $this->db->order_by("precio", "ASC");
       $query = $this->db->get();
       $result = $query->row_array();     
     }

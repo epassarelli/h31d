@@ -3,7 +3,7 @@
     <img src="<?php echo base_url($this->layout->get_logo()) ?>" height="100px">
     <br>
     <a href="<?php echo site_url() ?>"><?php echo $this->layout->get_title('true') ?></a>
-  </div><!-- /.login-logo -->
+  </div>
   <div class="login-box-body">
     <p class="login-box-msg"><?php echo lang('login_desc') ?></p>
     <?php echo $message;?>
@@ -23,7 +23,7 @@
           <input type="hidden" name="google_rechapatcha" id="googleRechapatcha" value=""/>
           <div class="g-recaptcha" data-sitekey="<?php echo $google_recaptcha['site_key'] ?>"></div>    
           <br/>
-        </div><!-- /.col -->
+        </div>
       </div>
     <?php endif ?>
     <div class="row">
@@ -59,11 +59,6 @@
     </div>
     <?php echo form_close(); ?>
     <a href="<?php echo site_url('forgot-password') ?>" title="Sign Up"><?php echo lang('login_forgot_password') ?></a><br>
-    <a href="<?php echo site_url('register') ?>" title="Sign Up"><?php echo lang('register_new') ?></a>
   </div><!-- /.login-box-body -->
   <br>
-  <!-- div class="callout callout-info">
-    <h4>Demo Login</h4>
-    <p>Email : <strong>admin@admin.com</strong><br>Password : <strong>password</strong></p>
-  </div -->
 </div><!-- /.login-box -->

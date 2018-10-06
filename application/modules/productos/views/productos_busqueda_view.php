@@ -84,7 +84,7 @@
     <div class="col-lg-4 grid-products" <?php echo $tagTipoString; ?> >
       <a href="<?php echo base_url() . $prod['slug'];?>"><img src="<?php echo base_url();?>assets/uploads/<?php echo $prod['foto1'] ?>" class="img-responsive" alt="Guantes" width="100%"></a>
       <p class="nombreProducto"><?php echo $prod['nombre']; ?></p>
-      <p class="precioProducto"><?php echo $prod['precio']; ?></p>
+      <p class="precioProducto">$  <?php echo $prod['precio']; ?></p>
     </div>
 
     <?php 

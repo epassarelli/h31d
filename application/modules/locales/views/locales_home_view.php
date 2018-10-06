@@ -1,19 +1,3 @@
-<script type="text/javascript">
-    $( function() {            
-    $("#provincia").change( function() {                
-      $("#provincia option:selected").each( function() {
-                provincia = $('#provincia').val();                   
-        $.post( 
-          "<?php echo base_url();?>admin/localidades/getLocalidadesForm", 
-          { provincia : provincia }, 
-          function(data) {
-                      $("#localidad").html(data);
-                });         
-            });            
-    });         
-  }); 
-</script>
-
 <!--==========================
   categorias Section
 ============================-->
@@ -46,46 +30,6 @@
         </div>
     </div>
 
-<!--
-    <div class="row wow fadeInUp">
-         <div class="col-lg-2 offset-lg-1">
-          <h6>buscador de locales</h6>
-         </div>
-    </div>
-
-    <div class="row wow fadeInUp">
-         
-         <div class="col-lg-3 offset-lg-1">
-            <form action="">
-              <div class="form-group">
-                <label for="selectProvincia">PROVINCIA</label>
-                <select class="form-control" id="provincia" name="provincia">
-                    <?php foreach ($provincias as $p): ?>
-                      <option value="<?php echo $p->id; ?>"><?php echo $p->nombre; ?></option>
-                    <?php endforeach; ?>
-                </select>
-              </div>
-
-         </div>
-
-
-          <div class="col-lg-3">
-
-              <div class="form-group">
-                <label for="selectProvincia">LOCALIDAD</label>
-                <select class="form-control" name="localidad" id="localidad">
-                  <option value="">Selecciona primero la provincia</option>
-                </select>
-              </div>
-            </form>
-          </div>
-
-         <div class="col-lg-2">
-            <button>Buscar</button>
-         </div>
-
-    </div>
--->
     <div class="space25"></div>
   
 
@@ -134,8 +78,8 @@ $( ".mostrarmapa" ).click(function(e) {
   var latitud = $(this).attr('id');
   var longitud = $(this).attr('name');
   var $iframe = $('#mapa');
-  //var url = 'http://maps.google.com/maps/place?q='+latitud+','+longitud+'&z=15&output=embed';
-  var url = 'http://maps.google.com/maps/place?q='+latitud+'&z=15&output=embed';
+  //var url = 'https://maps.google.com/maps/place?q='+latitud+','+longitud+'&z=15&output=embed';
+  var url = 'https://maps.google.com/maps/place?q='+latitud+'&z=15&output=embed';
   $iframe.attr('src',url);
   $('html,body').animate({ scrollTop: $("#mapa").offset().top }, 'slow');
   return false;
