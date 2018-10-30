@@ -17,11 +17,11 @@ class Contacto extends MY_Controller{
         $this->email->initialize();
 
         // Correo desde donde se envia
-	    $this->email->from('correo@held.com.ar', 'HELD Argentina Contacto');
+	    $this->email->from('ventas@heldargentina.com.ar', 'HELD Argentina Contacto');
 	    // Correo principal de destino
-	    $this->email->to('manria@urquizamotos.com.ar');
+	    $this->email->to('ventas@heldargentina.com.ar');
 		// Correo secundario para recibir
-		$this->email->cc('correo2@held.com.ar');
+		//$this->email->cc('correo2@held.com.ar');
 		
 		$fechaOC = date('d/m/Y');
 		$this->email->subject('Contacto desde Held - Contacto');

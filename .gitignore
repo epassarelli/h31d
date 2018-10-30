@@ -2,7 +2,8 @@ index.php
 /application/config/
 /application/cache/
 /assets/uploads/
-/assets/cache/
+*/cache/*
+*/logs/*.php
 
 application/logs/*
 !application/logs/index.html

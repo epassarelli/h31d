@@ -117,7 +117,7 @@
         
         <div class="row credits">
           <div class="col-lg-1 offset-lg-2"> <hr></div>
-          <div class="col-lg-6"><p>ventas@held-argentina.com <span class="separador">/</span> 0810-444-6686 <span class="separador">/</span> +54 11 6143-5319</p></div>
+          <div class="col-lg-6"><p>ventas@heldargentina.com.ar </p></div>
           <div class="col-lg-1"> <hr></div>
         </div>
 
